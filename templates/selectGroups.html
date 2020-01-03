@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>ShareWith</title>
+    </head>
+    <body>
+        <h1>Share With</h1>
+        <div>
+            <form action="/selectGroups" method="post">
+                <input type="text" name="groupName" placeholder="Group Name" required/>
+                <br/>
+                <input type="text" name="groupOwner" placeholder="Group Owner" required/>
+                <br/>
+                <input type="submit" value="Share">
+            </form>
+        </div>
+        {% if message %}
+            {{ message }}
+        {% endif %}
+        <br/>
+        <a href="/">Go back</a>
+    </body>
+</html>

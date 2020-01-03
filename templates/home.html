@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Finstagram</title>
+    </head>
+    <body>
+        <h1>Hello, {{ username }}!</h1>
+        <div>
+            <ul>
+                <li><a href="/images">View Images</a></li>
+                <li><a href="/upload">Upload an Image</a></li>
+                <li><a href="/logout">Logout</a></li>
+				<li><a href="/manage">Manage Followers</a>
+				<li><a href="/createGroup">Create A Friend Group</a>
+				<li><a href="/addToGroup">Add Friend To A Group</a>
+            </ul>
+			    <form action="/follow" method="get" method="post">
+					<input type="text" name="follow" placeholder="Enter User To Follow" required/>
+					<br/>
+					<input type="submit" value="Follow">
+            </form>
+        </div>
+    </body>
+</html>

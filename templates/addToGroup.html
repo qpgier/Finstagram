@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Finstagram</title>
+	</head>
+	<body>
+		<h1>Add To Group</h1>
+		<div>
+			<form action="/addThisPerson" method="POST">
+				<input type="text" name="groupName" placeholder="Group Name" required/>	
+				<br/>
+				<input type="text" name="username" placeholder="User To Add" required/>
+				<br/>
+				<input type="submit" value="Add to Group">
+			</form>
+		</div>
+		{% if message %}
+            {{ message }}
+        {% endif %}
+        <br/>
+        <a href="/">Go back</a>
+	</body>
+</html>

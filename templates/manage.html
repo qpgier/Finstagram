@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+
+
+
+
+<form action="/AcceptOrDecline" method = "POST">
+	MANAGE FOLLOWERS
+	{% for line in requestData %}
+	<input type="radio" name="username_follower" value={{line.username_follower}}>{{line.username_follower}}</input>
+		<br>
+	{% endfor %}
+		<input type="submit" name = 'followButton' value = "accept" />
+		<input type="submit" name = 'followButton' value = "decline" />
+</form>
+
+
+<a href="/home"> Go Back </a>
+<br>
+<a href="/logout">Logout</a>
+
+</body>
+
+
+</html>
